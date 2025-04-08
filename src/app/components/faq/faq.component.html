@@ -1,0 +1,11 @@
+<section class="faq">
+    <h2 class="faq__title">Perguntas Frequentes</h2>
+
+    <div class="faq__questions">
+        @for (item of faqDatas; track $index) {
+            <app-question [question]="item.question" [response]="item.response" />
+        }
+    </div>
+
+    <a href="#price" class="faq__btn animation-button-02">QUERO CONSEGUIR UM EMPREGO AGORA!</a>
+</section>

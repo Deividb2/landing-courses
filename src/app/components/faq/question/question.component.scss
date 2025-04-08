@@ -1,0 +1,52 @@
+@use "../../../../assets/styles/variables" as *;
+
+.question {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        background-color: transparent;
+        border: 1px solid $clr-surface-a50;
+        padding: 1rem;
+
+        &--arrow {
+            font-size: 1.2rem;
+        }
+
+        &--question {
+            font-weight: 400;
+        }
+    }
+
+    &__response {
+        transition: all .5s ease-in-out;
+        height: 0;
+        overflow: hidden;
+        padding: 0 1rem;
+        color: $clr-surface-a50;
+    }
+    
+    .openFaq {
+        height: 8rem;
+        padding: 1rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .question {
+        .openFaq {
+            height: 5rem; 
+        }
+    }
+}
+
+
+@media(min-width: 1024px) {
+    .question {
+        cursor: pointer;
+    }
+}

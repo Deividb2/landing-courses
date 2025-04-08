@@ -1,0 +1,11 @@
+<div class="question">
+    <div class="question__head" (click)="hendleFaq()">
+        <div class="question__head--arrow">
+            <ng-icon [name]="arrowName"></ng-icon>
+        </div>
+        <h3 class="question__head--question">{{ question }}</h3>
+    </div>
+    <div class="question__response" [class.openFaq]="openFaq">
+        <p>{{ response }}</p>
+    </div>
+</div>

@@ -1,0 +1,166 @@
+@use "../../../assets/styles/variables" as *;
+
+.bonus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    padding: 4rem 1.5rem;
+    min-height: 100vh;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+
+        h2 {
+            font-size: 1.5rem;
+            color: $clr-primary-a0;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $clr-surface-a50;
+        }
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: center;
+        gap: .8rem;
+
+        &--left {
+            display: flex;
+            flex-direction: column;
+            gap: 15rem;
+            margin-top: 1rem;
+
+            &__day {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                h4 {
+                    color: $clr-primary-a0;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    list-style: none;
+                    
+                    li {
+                        display: flex;
+                        gap: .2rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        &--line {
+            width: 5px;
+            background-color: $clr-primary-a0;
+        }
+
+        &--right {
+            display: flex;
+            flex-direction: column;
+            gap: 13rem;
+            margin: 15rem 0 1rem 0;
+
+            &__day {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                h4 {
+                    color: $clr-primary-a0;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    list-style: none;
+                    
+                    li {
+                        display: flex;
+                        gap: .2rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        p {
+            color: $clr-surface-a50;
+        }
+    }
+}
+
+@media(min-width: 425px) {
+    .bonus {
+        &__blocks--right {
+            margin: 11rem 0 1rem 0;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .bonus {
+        &__header {
+            h2 {
+                max-width: 40rem;
+            }
+        }
+
+        &__blocks {
+            &--left {
+                gap: 12rem;
+            }
+
+            &--right {
+                gap: 12rem;
+            }
+        }
+
+        &__footer {
+            align-items: center;
+            
+            p {
+                text-align: center;
+                max-width: 40rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .bonus {
+        &__header {
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                max-width: 40rem;
+            }
+        }
+    }
+}

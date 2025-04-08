@@ -1,0 +1,16 @@
+@use "../../../assets/styles/variables" as *;
+
+.whats {        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $clr-light-a0;
+    background-color: #00b600;
+    border-radius: 100%;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}

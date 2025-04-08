@@ -1,0 +1,33 @@
+@use "../../../assets/styles/variables" as *;
+
+.faq {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 1rem;
+
+    &__title {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__questions {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+    }
+
+    &__btn {
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        padding: 1rem;
+        border-radius: .5rem;
+        width: auto;
+        background-color: $clr-primary-a0;
+    }
+}

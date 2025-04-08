@@ -1,0 +1,15 @@
+<section class="benefits">
+    <h2 class="benefits__title">O QUE VOCÊ VAI APRENDER NESTE EBOOK?</h2>
+
+    <div class="benefits__cards">
+        @for (item of cardsData; track $index) {
+            <div class="benefits__cards--item">
+                <div class="benefits__cards--item__icon">
+                    <ng-icon [name]="item.icon" />
+                </div>
+                <h3 class="benefits__cards--item__title">{{ item.title }}</h3>
+                <h4 class="benefits__cards--item__text">{{ item.text }}</h4>
+            </div>
+        }
+    </div>
+</section>
