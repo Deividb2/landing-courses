@@ -1,10 +1,7 @@
 @use "../../../assets/styles/variables" as *;
 
-.contact {
-    // background-color: $clr-surface-a0;
-    
+.contact {    
     &__content {
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -71,6 +68,7 @@
         &__content {
             gap: 1rem;
             padding: 4rem 3rem;
+            min-height: 100vh;
 
             &--networks {
                 gap: .5rem;

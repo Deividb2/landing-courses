@@ -1,13 +1,12 @@
 @use "../../../assets/styles/variables" as *;
 
 .faq {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
 
     &__title {
         text-align: center;
@@ -29,5 +28,11 @@
         border-radius: .5rem;
         width: auto;
         background-color: $clr-primary-a0;
+    }
+}
+
+@media(min-width: 768px) {
+    .faq {
+        min-height: 100vh;
     }
 }
