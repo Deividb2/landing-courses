@@ -3,6 +3,8 @@
 .audience {
     display: grid;
     grid-template-rows: repeat(2, auto);
+    // background-color: $clr-light-a0;
+    // color: $clr-dark-a0;
 
     &__content {
         display: flex;
@@ -15,8 +17,12 @@
             text-align: center;
         }
 
-        .first-title {
-            color: $clr-primary-a0;
+        .positive-title {
+            color: #0a9c00;
+        }
+
+        .negative-title {
+            color: #fe0000;
         }
 
         &--list {
@@ -31,7 +37,17 @@
                 gap: .5rem;
 
                 div ng-icon {
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .positive {
+                    color: #0a9c00;
+                }
+
+                .negative {
+                    color: #fe0000;
                 }
             }
         }
@@ -42,10 +58,6 @@
     .audience {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 80vh;
-        
-        &__content {
-            place-content: center;
-        }
     }
 }
 

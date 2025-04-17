@@ -1,0 +1,28 @@
+<section class="guide">
+    <div class="guide__header">
+        <h2 class="guide__header--title">POR QUE ESTE MÉTODO FUNCIONA?</h2>
+        <h3 class="guide__header--subtitle">Diferente de outros materiais genéricos, este eBook te ensina um passo a passo real, aplicável e testado!</h3>
+    </div>
+
+    <div class="guide__content">
+        <div class="guide__content--text">
+            <div class="guide__content--text__cards">
+                @for (item of productGuideCards; let i = $index; track $index) {
+                    <div class="guide__content--text__cards--card">
+                        <div class="guide__content--text__cards--card__icon">
+                            <!-- <ng-icon [name]="item.icon"></ng-icon> -->
+                            <span>{{ i+1 }}</span>
+                        </div>
+                        <h4 class="guide__content--text__cards--card__title">{{ item.title }}</h4>
+                    </div>
+                }
+            </div>
+        
+            <span class="guide__content--text__bottom">Você não vai apenas ler… Você vai aplicar e ver os resultados!</span>
+
+            <a href="" class="guide__content--text__btn animation-button-02">QUERO CONSEGUIR UM EMPREGO AGORA!</a>
+        </div>
+
+        <div class="guide__content--img"></div>
+    </div>
+</section>

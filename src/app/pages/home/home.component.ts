@@ -9,11 +9,12 @@ import { PriceComponent } from "../../components/price/price.component";
 import { ProductGuideComponent } from "../../components/product-guide/product-guide.component";
 import { WhatsButtonComponent } from "../../components/whats-button/whats-button.component";
 import { ContactComponent } from "../../components/contact/contact.component";
+import { GuaranteeComponent } from "../../components/guarantee/guarantee.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BannerComponent, BenefitsComponent, BonusComponent, TargetAudienceComponent, FaqComponent, FooterComponent, PriceComponent, ProductGuideComponent, WhatsButtonComponent, ContactComponent],
+  imports: [BannerComponent, BenefitsComponent, BonusComponent, TargetAudienceComponent, FaqComponent, FooterComponent, PriceComponent, ProductGuideComponent, WhatsButtonComponent, ContactComponent, GuaranteeComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

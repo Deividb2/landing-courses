@@ -1,0 +1,63 @@
+@use "../../../assets/styles/variables" as *;
+@import url("../../../assets/styles/_animations.scss");
+
+.guarantee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: $clr-light-a0;
+    
+    &__img {
+        width: 15rem;
+        height: 15rem;
+        background: url("../../../../public/images/guarantee-img2.jfif") no-repeat center center / cover;
+        border-radius: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        &--title {
+            font-size: 1.7rem;
+            color: $clr-primary-a0;
+        }
+
+        &--text {
+            color: $clr-surface-a50;
+            line-height: 1.4rem;
+        }
+
+        &--button {
+            text-decoration: none;
+            text-align: center;
+            font-size: .9rem;
+            font-weight: 700;
+            padding: 1rem;
+            background-color: $clr-primary-a0;
+            border-radius: .5rem;
+        }
+    }
+}
+
+@media(min-width: 768px)  {
+    .guarantee {
+        flex-direction: row;
+        justify-content: center;
+        min-height: 80vh;
+
+        &__content {
+            width: 50%;
+            max-width: 30rem;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .guarantee {
+        gap: 4rem;
+    }
+}

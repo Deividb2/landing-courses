@@ -4,7 +4,8 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 
 // icons
 import { heroCheckCircleSolid as check } from '@ng-icons/heroicons/solid';
-import { matClose as close } from '@ng-icons/material-icons/baseline';
+// import { matClose as close } from '@ng-icons/material-icons/baseline';
+import { heroXCircleSolid as close } from '@ng-icons/heroicons/solid';
 
 @Component({
   selector: 'app-target-audience',

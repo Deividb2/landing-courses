@@ -5,13 +5,13 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 // icons
 import { heroAcademicCap } from '@ng-icons/heroicons/outline';
 import { matStar } from '@ng-icons/material-icons/baseline';
-import { matAssignmentIndOutline, matBoltOutline, matManageSearchOutline } from '@ng-icons/material-icons/outline';
+import { matAssignmentIndOutline, matBoltOutline, matManageSearchOutline, matDescriptionOutline } from '@ng-icons/material-icons/outline';
 
 @Component({
   selector: 'app-benefits',
   standalone: true,
   imports: [CommonModule, NgIcon],
-  providers: [provideIcons({ heroAcademicCap, matAssignmentIndOutline, matManageSearchOutline, matStar, matBoltOutline })],
+  providers: [provideIcons({ heroAcademicCap, matAssignmentIndOutline, matManageSearchOutline, matStar, matBoltOutline, matDescriptionOutline })],
   templateUrl: './benefits.component.html',
   styleUrl: './benefits.component.scss'
 })
@@ -42,6 +42,11 @@ export class BenefitsComponent {
       title: "Plano de ação “30 Dias para o Emprego” ",
       text: "Estratégia para enviar 30 currículos por dia e se tornar impossível não ser contratado!"
     },
+    {
+      icon: "matDescriptionOutline",
+      title: "Script de Entrevistas de emprego",
+      text: "Garantia de aprovação em qualquer entrevista, baseado na visão geral de mercado hoje."
+    }
   ]
 }
 

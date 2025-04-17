@@ -12,25 +12,29 @@ import { CommonModule } from '@angular/common';
 export class FaqComponent {
   faqDatas: ReadonlyArray<IFaqDatas> = [
     {
-      question: "Quais são os meios de pagamento?",
-      response: "Omnis, itaque quam, est ea harum at suscipit optio debitis enim ab, ad placeat eveniet facilis. Ab mollitia minus dicta dolorem atque!"
+      question: "Esse eBook realmente vai me ajudar a conseguir um emprego?",
+      response: "Sim! O conteúdo foi pensado para te dar direção prática. Ele não promete milagres, mas te entrega ferramentas e estratégias reais para conseguir seu emprego em tempo record."
     },
     {
-      question: "Quais garantias são oferecidas?",
-      response: "Omnis, itaque quam, est ea harum at suscipit optio debitis enim ab, ad placeat eveniet facilis. Ab mollitia minus dicta dolorem atque!"
+      question: "Eu não tenho dinheiro para fazer cursos agora. Isso é um problema?",
+      response: "De jeito nenhum. Todos os cursos indicados no eBook são gratuitos e com certificado, exatamente para quem está sem grana mas quer se desenvolver."
     },
     {
-      question: "Como ganhar um oscar?",
-      response: "Omnis, itaque quam, est ea harum at suscipit optio debitis enim ab, ad placeat eveniet facilis. Ab mollitia minus dicta dolorem atque!"
+      question: "Nunca trabalhei, esse material serve pra mim?",
+      response: "Serve sim! O eBook tem dicas específicas para quem não tem experiência, incluindo como montar um bom currículo mesmo assim, e como se sair bem nas entrevistas."
     },
     {
-      question: "Como alugar uma casa na vila do Chaves?",
-      response: "Não contavam com minha astúcia"
+      question: "Preciso ter acesso à internet o tempo todo?",
+      response: "Só para acessar os cursos e materiais extras. Mas o eBook pode ser lido offline, então você pode estudá-lo a qualquer momento."
     },
     {
-      question: "Vamos todos a Acapulco",
-      response: "Omnis, itaque quam, est ea harum at suscipit optio debitis enim ab, ad placeat eveniet facilis. Ab mollitia minus dicta dolorem atque!"
+      question: "E se nada disso funcionar pra mim?",
+      response: "Tudo depende da sua dedicação. O eBook é um guia, mas quem coloca em prática é você. Se você aplicar as dicas com constância, os resultados virão."
     },
+    {
+      question: "Por que o eBook custa R$ 19,90?",
+      response: "O valor é simbólico e foi pensado para ser acessível. Ele ajuda a manter o projeto e continuar oferecendo conteúdos de qualidade. Por apenas R$ 19,90, você terá acesso a informações que podem mudar completamente sua trajetória profissional."
+    }
   ]
 } 
 
