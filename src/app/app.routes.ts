@@ -5,7 +5,7 @@ export const routes: Routes = [
     {
         path: '',
         component: HomeComponent,
-        title: "Home",
+        title: "GUIA PRÁTICO PARA SAIR DO DESEMPREGO RÁPIDO",
     },
     {
         path: '**',

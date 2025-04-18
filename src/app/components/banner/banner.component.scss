@@ -39,18 +39,24 @@
             text-align: center;
 
             div {
-                width: 100%;
+                width: auto;
                 height: 15rem;
                 background-color: #ccc;
             }
 
+            img {
+                width: auto;
+                height: 11rem;
+            }
+
             &__btn {
                 text-decoration: none;
-                background-color: $clr-primary-a0;
                 padding: 1rem; 
                 font-size: .9rem;
                 font-weight: 700;
                 border-radius: .5rem;
+                background-color: $clr-secundary-a0;
+                color: $clr-dark-a0;
             }
         }
     }
@@ -71,6 +77,10 @@
 
             &--img {
                 width: 50%;
+
+                img {
+                    height: 15rem;
+                }
             }
         }
     }
@@ -98,6 +108,11 @@
 
                 div {
                     width: 80%;
+                }
+
+                img {
+                    width: 24rem;
+                    height: 15rem;
                 }
                 
                 &__btn {

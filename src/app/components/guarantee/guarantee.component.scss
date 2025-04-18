@@ -23,7 +23,7 @@
 
         &--title {
             font-size: 1.7rem;
-            color: $clr-primary-a0;
+            color: $clr-dark-a0;
         }
 
         &--text {
@@ -37,8 +37,10 @@
             font-size: .9rem;
             font-weight: 700;
             padding: 1rem;
-            background-color: $clr-primary-a0;
             border-radius: .5rem;
+            background-color: $clr-secundary-a0;
+            color: $clr-dark-a0;
+            box-shadow: 0 0 1rem #000000bd;
         }
     }
 }
